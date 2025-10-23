@@ -1,14 +1,142 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>Geneva Releases</title>
-<style>body{font:16px/1.5 system-ui;margin:2rem;max-width:900px}code{background:#f6f8fa;padding:.1rem .3rem;border-radius:4px}h1,h2{margin-top:1.2rem}ul{line-height:1.6}</style>
-<h1>Geneva — Data Products</h1>
-<p>Hashes &amp; periods: <code>RELEASES/catalog.json</code>. All times UTC. Derived-only.</p>
-<p>Last build: 2025-10-19T22:39:54.070164+00:00</p>
-<h2>Downloads</h2>
-<ul>
-  <li><b>Feature Matrix</b> — 2025Q4 — <a href="releases/Feature_Matrix_2025Q4.zip">ZIP</a> · <code>24e240bfe521…</code></li>
-  <li><b>Feature Matrix STD</b> — 2025Q4_STD — <a href="releases/Feature_Matrix_2025Q4_STD.zip">ZIP</a> · <code>08bf6a220368…</code></li>
-  <li><b>Feature Matrix PRO</b> — 2025Q4_PRO_v2 — <a href="releases/Feature_Matrix_2025Q4_PRO_v2.zip">ZIP</a> · <code>5695a7a75fe5…</code></li>
-</ul>
-<p><a href="releases/catalog.json">catalog.json</a> · <a href="releases/releases.xml">RSS</a> · <a href="../docs/PRICECARD.md">PRICECARD</a> · <a href="../docs/LEGAL/TERMS_OF_USE.md">ToS</a></p>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Geneva Store – Feature Matrix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #161b22;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #58a6ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #58a6ff;
+      font-size: 1.3rem;
+    }
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+    .card ul li {
+      margin-bottom: 0.25rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #238636;
+    }
+    .btn.secondary {
+      background-color: #444c56;
+    }
+    h2 {
+      margin-top: 3rem;
+      color: #58a6ff;
+    }
+    a {
+      color: #58a6ff;
+    }
+    .hash {
+      font-size: 0.8rem;
+      color: #8b949e;
+      word-break: break-all;
+    }
+    footer p {
+      margin: 0.5rem 0;
+      font-size: 0.8rem;
+      color: #6e7681;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Geneva Store</h1>
+    <p>Kwartalne zestawy danych – Feature Matrix dla AI tradingu</p>
+  </header>
+  <main>
+    <section class="products">
+      <div class="card">
+        <h3>Demo – Feature Matrix 2025Q4</h3>
+        <ul>
+          <li>2 symbole · interwał 15m</li>
+          <li>Idealne do testów i POC</li>
+        </ul>
+        <a href="https://github.com/ESIAENO/Geneva-Store/releases/download/Q4-2025/Feature_Matrix_2025Q4.zip" class="btn secondary" target="_blank">Pobierz z GitHub Releases</a>
+        <div class="hash">sha256: 24e240bfe521a2095d425a687934e235ce24bed3ed17e3362aec9973123fca60</div>
+      </div>
+      <div class="card">
+        <h3>Standard – Feature Matrix 2025Q4_STD</h3>
+        <ul>
+          <li>4 symbole · interwały 15m / 1h / 4h</li>
+          <li>Do zastosowań analitycznych i badawczych</li>
+        </ul>
+        <a href="https://github.com/ESIAENO/Geneva-Store/releases/download/Q4-2025/Feature_Matrix_2025Q4_STD.zip" class="btn secondary" target="_blank">Pobierz z GitHub Releases</a>
+        <div class="hash">sha256: 08bf6a220368b65e14195aa3da6c67be06a6ffa056870e66e68d6177b3def145</div>
+      </div>
+      <div class="card">
+  <h3>PRO v2 – Feature Matrix 2025Q4_PRO_v2</h3>
+        <ul>
+          <li>10 symboli · interwały 15m / 1h / 4h</li>
+          <li>Najszersze pokrycie do modeli AI</li>
+        </ul>
+        <a href="https://github.com/ESIAENO/Geneva-Store/releases/download/Q4-2025/Feature_Matrix_2025Q4_PRO_v2.zip" class="btn secondary" target="_blank">Pobierz z GitHub Releases</a>
+        <div class="hash">sha256: 5695a7a75fe51ab7371a3c3ad52dbf4aef52012646123f7b853740255983483c</div>
+      </div>
+    </section>
+    <section>
+      <h2>Katalog &amp; RSS</h2>
+      <p>Aktualne zestawienie wersji znajdziesz w <a href="releases/catalog.json">catalog.json</a>, a kanał aktualizacji w <a href="releases/releases.xml">RSS</a>.</p>
+    </section>
+    <section>
+      <h2>Jak to działa?</h2>
+      <p>Wybierz potrzebny pakiet danych (Demo, Standard lub PRO). Po dokonaniu zakupu lub pobraniu wersji demo, zweryfikuj sumę kontrolną SHA-256 i rozpakuj archiwum ZIP. Zestawy zawierają gotowe macierze cech (feature matrix) przygotowane pod modele ONNX/EV i mogą być używane bezpośrednio w pipeline ML.</p>
+    </section>
+    <section>
+      <h2>Kontakt</h2>
+      <p>Masz pytania lub chcesz zamówić inne konfiguracje? Napisz: <a href="mailto:support@example.org">support@example.org</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Geneva AI. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>
