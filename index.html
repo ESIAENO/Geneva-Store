@@ -2,89 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Geneva Store – Feature Matrix</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geneva Store – Feature Matrix Data Sets</title>
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #0d1117;
-      color: #c9d1d9;
-      line-height: 1.6;
-    }
-    header, footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #161b22;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #58a6ff;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #8b949e;
-    }
-    main {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background-color: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #58a6ff;
-      font-size: 1.3rem;
-    }
-    .card ul {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 0.5rem;
-    }
-    .card ul li {
-      margin-bottom: 0.25rem;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      border-radius: 4px;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #238636;
-    }
-    .btn.secondary {
-      background-color: #444c56;
-    }
-    h2 {
-      margin-top: 3rem;
-      color: #58a6ff;
-    }
-    a {
-      color: #58a6ff;
-    }
-    .hash {
-      font-size: 0.8rem;
-      color: #8b949e;
-      word-break: break-all;
-    }
-    footer p {
-      margin: 0.5rem 0;
-      font-size: 0.8rem;
-      color: #6e7681;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background-color: #0d1117; color: #c9d1d9; line-height: 1.6; padding: 0 1rem 2rem; }
+    header { text-align: center; padding: 2rem 0; }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; color: #8b949e; }
+    main { max-width: 900px; margin: 0 auto; }
+    .card { background-color: #161b22; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.25); }
+    .card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; color: #58a6ff; }
+    .card ul { margin-left: 1.2rem; margin-bottom: 1rem; }
+    .card ul li { margin-bottom: 0.4rem; }
+    .btn { display: inline-block; padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-weight: bold; transition: background-color 0.2s; margin-top: 0.4rem; }
+    /* Only Gumroad button remains */
+    .btn.gumroad { background-color: #372945; color: #c599ff; margin-right: 0.5rem; }
+    .btn.gumroad:hover { background-color: #4c3660; }
+    .btn.secondary { background-color: #21262d; color: #58a6ff; margin-right: 0.5rem; }
+    .btn.secondary:hover { background-color: #30363d; }
+    section { margin-top: 2rem; }
+    section h4 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #58a6ff; }
+    section p { margin-bottom: 0.7rem; }
+    footer { text-align: center; margin-top: 3rem; color: #6e7681; }
+    footer a { color: #58a6ff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -93,46 +35,82 @@
     <p>Quarterly data sets – Feature Matrix for AI trading</p>
   </header>
   <main>
-    <section class="products">
-      <div class="card">
-        <h3>Demo – Feature Matrix 2025Q4</h3>
-        <ul>
-          <li>2 symbols · 15m interval</li>
-          <li>Ideal for tests and POC</li>
-        </ul>
-        <a href="https://github.com/ESIAENO/Geneva-Store/releases/download/Q4-2025/Feature_Matrix_2025Q4.zip" class="btn secondary" target="_blank">Download from GitHub Releases</a>
-        <div class="hash">sha256: 24e240bfe521a2095d425a687934e235ce24bed3ed17e3362aec9973123fca60</div>
-      </div>
-      <div class="card">
-        <h3>Standard – Feature Matrix 2025Q4_STD</h3>
-        <ul>
-          <li>4 symbols · 15m / 1h / 4h intervals</li>
-          <li>Suitable for analytic and research uses</li>
-        </ul>
-        <a href="https://github.com/ESIAENO/Geneva-Store/releases/download/Q4-2025/Feature_Matrix_2025Q4_STD.zip" class="btn secondary" target="_blank">Download from GitHub Releases</a>
-        <div class="hash">sha256: 08bf6a220368b65e14195aa3da6c67be06a6ffa056870e66e68d6177b3def145</div>
-      </div>
-      <div class="card">
-        <h3>PRO v2 – Feature Matrix 2025Q4_PRO_v2</h3>
-        <ul>
-          <li>10 symbols · 15m / 1h / 4h intervals</li>
-          <li>The widest coverage for AI models</li>
-        </ul>
-        <a href="https://github.com/ESIAENO/Geneva-Store/releases/download/Q4-2025/Feature_Matrix_2025Q4_PRO_v2.zip" class="btn secondary" target="_blank">Download from GitHub Releases</a>
-        <div class="hash">sha256: 5695a7a75fe51ab7371a3c3ad52dbf4aef52012646123f7b853740255983483c</div>
-      </div>
-    </section>
+    <!-- Demo Product -->
+    <div class="card">
+      <h3>Demo – Feature Matrix 2025Q4</h3>
+      <ul>
+        <li>2 core crypto symbols (e.g. BTC & ETH) with 15‑minute derived features</li>
+        <li>Lightweight trial package for proof‑of‑concept and evaluation</li>
+        <li>Includes engineered feature vectors ready for model training/inference (EV/ONNX compatible)</li>
+        <li>Derived only; no raw market data – license compliant</li>
+        <li><strong>SHA‑256:</strong> 24e240bfe521a2095d425a687934e235ce24bed3ed17e3362aec9973123fca60</li>
+        <li><strong>Price:</strong> $199 – $399 (one‑time snapshot)</li>
+      </ul>
+      <!-- Only Gumroad button remains -->
+      <a class="btn gumroad" href="YOUR_DEMO_GUMROAD_LINK" target="_blank">Buy Demo via Gumroad</a>
+    </div>
+    <!-- Standard Product -->
+    <div class="card">
+      <h3>Standard – Feature Matrix 2025Q4_STD</h3>
+      <ul>
+        <li>4 crypto symbols with 15m / 1h / 4h derived features</li>
+        <li>Balanced coverage for small funds & quant researchers</li>
+        <li>Pre‑computed indicators & features used in advanced AI models</li>
+        <li>Derived only; updates quarterly</li>
+        <li><strong>SHA‑256:</strong> 08bf6a220368b65e14195aa3da6c67be06a6ffa056870e66e68d6177b3def145</li>
+        <li><strong>Price:</strong> $499 – $999 (snapshot) or $499 – $999/mo (subscription)</li>
+      </ul>
+      <a class="btn gumroad" href="YOUR_STD_GUMROAD_LINK" target="_blank">Buy Standard via Gumroad</a>
+    </div>
+    <!-- PRO Product -->
+    <div class="card">
+      <h3>PRO v2 – Feature Matrix 2025Q4_PRO_v2</h3>
+      <ul>
+        <li>10 crypto symbols with 15m / 1h / 4h derived features</li>
+        <li>Maximum coverage for quantitative research & high‑capacity models</li>
+        <li>Ideal for training and backtesting predictive algorithms across multiple assets</li>
+        <li>Derived only; full legal compliance & quarterly updates</li>
+        <li><strong>SHA‑256:</strong> 5695a7a75fe51ab7371a3c3ad52dbf4aef52012646123f7b853740255983483c</li>
+        <li><strong>Price:</strong> $1499 – $2999 (snapshot) or $999 – $1999/mo (subscription)</li>
+      </ul>
+      <a class="btn gumroad" href="YOUR_PRO_GUMROAD_LINK" target="_blank">Buy PRO v2 via Gumroad</a>
+    </div>
+    <!-- Catalog & RSS -->
     <section>
-      <h2>Catalog & RSS</h2>
-      <p>You can find the current version listing in <a href="releases/catalog.json">catalog.json</a>, and the update feed in <a href="releases/releases.xml">RSS</a>.</p>
+      <h4>Catalog & RSS</h4>
+      <p>Verify the integrity and authenticity of our releases via checksums and metadata. Use the catalog JSON to programmatically track versions or integrate into CI/CD pipelines.</p>
+      <p>
+        <a class="btn secondary" href="releases/catalog.json" target="_blank">Download catalog.json</a>
+        <a class="btn secondary" href="releases/releases.xml" target="_blank">Releases RSS feed</a>
+      </p>
     </section>
+    <!-- How it works -->
     <section>
-      <h2>How does it work?</h2>
-      <p>Choose the data package you need (Demo, Standard, or PRO). After completing your purchase or downloading the demo version, verify the SHA-256 checksum and extract the ZIP archive. The sets contain ready feature matrices prepared for ONNX/EV models and can be used directly in ML pipelines.</p>
+      <h4>How does it work?</h4>
+      <p>Our Feature Matrix packages contain engineered features (indicators, oscillators, statistical measures) derived from crypto price and volume series. They are structured as TSV/CSV files grouped by symbol and timeframe. Each row corresponds to a timestamp (UTC) with dozens of feature columns.</p>
+      <p>To use:
+        <ol>
+          <li>After purchase, download the ZIP archive via your chosen platform (Gumroad).</li>
+          <li>Verify the SHA‑256 hash using your local tool (e.g. <code>sha256sum file.zip</code>) to ensure integrity.</li>
+          <li>Extract the archive and load the TSV/CSV files into your preferred environment (Python, R, etc.).</li>
+          <li>For neural networks, convert to tensors or feed directly into Geneva’s EV/ONNX models.</li>
+        </ol>
+      </p>
     </section>
+    <!-- Why choose our datasets -->
     <section>
-      <h2>Contact</h2>
-      <p>Have questions or want other configurations? Write to: <a href="mailto:support@example.org">support@example.org</a></p>
+      <h4>Why choose our datasets?</h4>
+      <p>
+        Geneva’s Feature Matrix series is curated for AI‑driven trading and research. We handle data engineering, cleaning and feature extraction so you can focus on modeling. Unlike raw tick/price data, our matrices are compact, derived‑only and license‑safe【391578517898538†L4-L20】. You retain rights to build and deploy your own trading models on top of our features.
+      </p>
+      <p>
+        Looking for a live weekly pack? Our EV Pack will be released once it meets the data volume threshold, as noted in the catalog.
+      </p>
+    </section>
+    <!-- Contact -->
+    <section>
+      <h4>Contact & Support</h4>
+      <p>Need a custom pack (e.g. sector‑specific, extended timeframe) or a subscription? Contact us at <a href="mailto:sales@example.org">sales@example.org</a>. We’ll help you choose the right package or build a tailored solution.</p>
     </section>
   </main>
   <footer>
