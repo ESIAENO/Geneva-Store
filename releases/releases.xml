@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Geneva Releases</title>
+  <link>https://example.org/geneva/releases</link>
+  <description>Weekly EV Pack and Quarterly Feature Matrix (derived-only, UTC)</description>
+  <lastBuildDate>Sun, 19 Oct 2025 22:39:54 +0000</lastBuildDate>
+  <item>
+  <title>Feature Matrix 2025Q4</title>
+  <link>https://example.org/geneva/releases/Feature_Matrix.zip</link>
+  <guid isPermaLink="false">24e240bfe521a209_fm</guid>
+  <pubDate>Sun, 19 Oct 2025 22:39:54 +0000</pubDate>
+  <description>SHA256: 24e240bfe521a2095d425a687934e235ce24bed3ed17e3362aec9973123fca60</description>
+</item>
+</channel></rss>

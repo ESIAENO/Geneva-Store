@@ -1,0 +1,24 @@
+{
+  "build_ts_utc": "2025-10-19T21:44:41Z",
+  "git_rev": "a52367b6",
+  "items": [
+    {
+      "product": "Feature Matrix",
+      "version": "2025Q4",
+      "zip": "public\\releases\\Feature_Matrix_2025Q4.zip",
+      "sha256": "24e240bfe521a2095d425a687934e235ce24bed3ed17e3362aec9973123fca60"
+    },
+    {
+      "product": "Feature Matrix STD",
+      "version": "2025Q4_STD",
+      "zip": "public\\releases\\Feature_Matrix_2025Q4_STD.zip",
+      "sha256": "08bf6a220368b65e14195aa3da6c67be06a6ffa056870e66e68d6177b3def145"
+    },
+    {
+      "product": "Feature Matrix PRO",
+      "version": "2025Q4_PRO_v2",
+      "zip": "public\\releases\\Feature_Matrix_2025Q4_PRO_v2.zip",
+      "sha256": "5695a7a75fe51ab7371a3c3ad52dbf4aef52012646123f7b853740255983483c"
+    }
+  ]
+}

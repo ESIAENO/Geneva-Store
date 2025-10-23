@@ -1,0 +1,18 @@
+{
+  "build_ts_utc": "2025-10-14T16:37:39Z",
+  "git_rev": "1c334232",
+  "items": [
+    {
+      "product": "EV Pack",
+      "period": "2025-W42",
+      "zip": "public/releases/EV_Pack_2025-W42.zip",
+      "sha256": "5c9f6046f161429f5b962b93786c96bd3c53a358f63390f7e09a2126a712ced3"
+    },
+    {
+      "product": "Feature Matrix",
+      "version": "2025Q4",
+      "zip": "public/releases/Feature_Matrix_2025Q4.zip",
+      "sha256": "b82c29c7d401eb72e69e54be7c1d7ea63b1aa210a31ee4d55835a3609f19e8ae"
+    }
+  ]
+}
